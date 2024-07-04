@@ -1,0 +1,59 @@
+/* Primary and Secondary Fonts */
+body {
+    font-family: 'Arial', sans-serif; /* Primary font */
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif; /* Secondary font for headings */
+  }
+  
+  /* Colors */
+  :root {
+    --primary-color: #007bff; /* Primary color */
+    --secondary-color: #6c757d; /* Secondary color */
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333; /* Default text color */
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Example Button Style */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+  }
+  
