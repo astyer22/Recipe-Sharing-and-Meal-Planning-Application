@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Recipes</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="recipe-search.html">Search Recipes</a></li>
+      </ul>
+    </nav>
+    <!-- Page Title -->
+    <h1>Search Recipes</h1>
+  </header>
+  
+  <!-- Main Content Section -->
+  <main>
+    <!-- Subtitle -->
+    <h2>Find Your Favorite Recipes</h2>
+    
+    <!-- Recipe Search Form -->
+    <form id="recipeSearchForm">
+      <label for="searchInput1">Food Item #1:</label>
+      <input type="text" id="searchInput1" placeholder="Enter first food item">
+      
+      <label for="searchInput2">Food Item #2:</label>
+      <input type="text" id="searchInput2" placeholder="Enter second food item">
+      
+      <label for="searchInput3">Food Item #3:</label>
+      <input type="text" id="searchInput3" placeholder="Enter third food item">
+      
+      <label for="searchInput4">Food Item #4:</label>
+      <input type="text" id="searchInput4" placeholder="Enter fourth food item">
+      
+      <label for="searchInput5">Food Item #5:</label>
+      <input type="text" id="searchInput5" placeholder="Enter fifth food item">
+      
+      <button type="submit">Search</button>
+    </form>
+    
+    <!-- Recipe Results Section -->
+    <div id="recipeResults"></div>
+  </main>
+  
+  <!-- Scripts Section -->
+  <script src="scripts/recipe-search.js"></script>
+</body>
+</html>

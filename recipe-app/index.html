@@ -7,20 +7,42 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>Recipe Sharing and Meal Planning</h1>
+    <!-- Navigation Bar -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="recipe-search.html">Search Recipes</a></li>
       </ul>
     </nav>
+    <!-- Page Title -->
+    <h1>Recipes and Meal Planning</h1>
   </header>
+  
+  <!-- Main Content Section -->
   <main>
-    <h2>Welcome to the Recipe Sharing and Meal Planning App!</h2>
-    <p>Discover and share your favorite recipes.</p>
+    <!-- Welcome Message -->
+    <h2>Welcome to the Recipes and Meal Planning App!</h2>
+
+    <!-- Image Section -->
+    <img src="images/family-photo.webp" alt="Family Cooking Together" class="family-photo">
+
+    <!-- Description and Action Section -->
+    <div class="web-description">
+      <p>Discover and save your favorite recipes into a personalized weekly meal plan.</p>
+
+      <!-- Pulse and Rotate Animation -->
+      <div class="pulse-and-rotate">Time to Cook!</div>
+
+      <!-- Find Recipes Button -->
+      <button id="recipeSearchBtn" onclick="window.location.href = 'recipe-search.html';">Find Recipes Here</button>
+    </div>
   </main>
+
+  <!-- Scripts Section -->
   <script src="scripts/app.js"></script>
 </body>
 </html>

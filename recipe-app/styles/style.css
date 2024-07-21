@@ -1,59 +1,224 @@
-/* Primary and Secondary Fonts */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Primary font */
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px; /* 1px letter spacing for all text */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align content at the top */
+  min-height: 100vh; /* Ensure body takes up full viewport height */
+  border: 3px solid #4b0082; /* Royal purple border */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 1px; /* 1px letter spacing */
+}
+
+h1, h2, h3 {
+  color: #4b0082; /* Royal purple */
+  letter-spacing: 1px; /* 1px letter spacing */
+  padding: 10px; /* Proper padding */
+  text-align: center;
+}
+
+p {
+  color: #333; /* Dark grey */
+  letter-spacing: 1px; /* 1px letter spacing */
+  padding: 10px; /* Proper padding */
+  font-size: 1.5rem;
+}
+
+/* Navigation Bar Styles */
+nav {
+  width: 100%;
+  background-color: #4b0082; /* Royal purple */
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the nav items */
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the list items horizontally */
+}
+
+nav ul li {
+  margin: 0 15px;
+  text-align: center; /* Center the text within list items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px; /* 1px letter spacing */
+}
+
+/* Main Content Styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center main content horizontally */
+  width: 100%; /* Ensure main takes up full width */
+  padding: 20px; /* Add padding around main content */
+}
+
+#recipeDetails {
+  width: 100%;
+  max-width: 600px; /* Limit the maximum width of the recipe details */
+  background: white; /* Background color for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+button {
+  background-color: #4b0082; /* Royal purple */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1px; /* 1px letter spacing */
+  text-align: center;
+}
+
+button:hover {
+  background-color: #280147; /* Darker shade of royal purple */
+}
+
+/* Form Styles */
+form {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc; /* Add border around the form */
+  border-radius: 8px;
+  width: 100%; /* Optional: Adjust width as needed */
+  max-width: 300px; /* Optional: Limit the maximum width of the form */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"] {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  letter-spacing: 1px; /* 1px letter spacing */
+  display: block;
+  width: 90%; /* Optional: to make input fields full width */
+  max-width: 300px; /* Optional: limit the width of input fields */
+}
+
+/* Message Styles */
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  letter-spacing: 1px; /* 1px letter spacing */
+}
+
+/* Additional Styles */
+.family-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Ensure image scales with its container */
+}
+
+/* Pulse and Rotate Animation */
+@keyframes pulseAndRotate {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
   }
-  
-  h1, h2, h3 {
-    font-family: 'Helvetica', sans-serif; /* Secondary font for headings */
+  10%, 30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(0deg); /* Pulse */
   }
-  
-  /* Colors */
-  :root {
-    --primary-color: #007bff; /* Primary color */
-    --secondary-color: #6c757d; /* Secondary color */
+  20%, 40%, 60%, 80% {
+    transform: scale(1) rotate(0deg); /* Back to original size */
   }
-  
-  /* Typography */
-  h1 {
-    font-size: 2rem;
-    color: var(--primary-color);
+  99% {
+    transform: scale(1) rotate(360deg); /* Rotate at the end */
   }
-  
-  h2 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-  }
-  
-  p {
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #333; /* Default text color */
-  }
-  
-  a {
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Example Button Style */
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 4px;
-  }
-  
-  .button:hover {
-    background-color: #0056b3; /* Darker shade of primary color */
-  }
-  
+}
+
+.pulse-and-rotate {
+  display: inline-block;
+  font-size: 24px;
+  color: #4b0082; /* Royal purple */
+  animation: pulseAndRotate 4s infinite; /* 4s duration for the animation */
+  align-self: center;
+}
+
+/* Centering button and animation within the div */
+.web-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.web-description button {
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+  background-color: white; /* Background color for recipe cards */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  margin: 10px 0; /* Margin to separate cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  max-width: 300px; /* Maximum width of the card */
+  text-align: center; /* Center the text */
+}
+
+/* Recipe Card Image Styles */
+.recipe-card img {
+  width: 100%; /* Ensure image fits within card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+/* Button inside Recipe Card */
+.recipe-card button {
+  background-color: #4b0082; /* Royal purple */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1px; /* 1px letter spacing */
+  text-align: center;
+  margin-top: 10px; /* Space above the button */
+}
+
+.recipe-card button:hover {
+  background-color: #280147; /* Darker shade of royal purple */
+}

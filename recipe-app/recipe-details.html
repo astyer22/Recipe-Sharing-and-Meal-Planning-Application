@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe-search.html">Search Recipes</a></li>
+            </ul>
+        </nav>
+        <!-- Page Title -->
+        <h1>Recipe Details</h1>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <!-- Recipe Details Container -->
+        <div id="recipeDetails"></div>
+        
+        <!-- Recipe Selection Form -->
+        <div>
+            <!-- Day of the Week Selector -->
+            <label for="dayOfWeekSelect">Select Day:</label>
+            <select id="dayOfWeekSelect">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            
+            <!-- Meal Type Selector -->
+            <label for="mealTypeSelect">Meal Type:</label>
+            <select id="mealTypeSelect">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+            
+            <!-- Buttons -->
+            <button id="saveRecipeBtn">Save Recipe</button>
+            <button id="downloadPlanBtn">Download Weekly Plan</button>
+        </div>
+    </main>
+    
+    <!-- Scripts Section -->
+    <script src="scripts/recipe-details.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</body>
+</html>

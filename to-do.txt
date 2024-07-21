@@ -1,0 +1,1 @@
+* Once web page is hosted fix the google pop-up sign-in. waiting for an actual domain will be easier then trying to add a domain to the local host. 
